@@ -46,10 +46,13 @@ public class FormSave extends HttpServlet {
 		String email = request.getParameter("email");
 		String description = request.getParameter("description");
 
+		String query = "INSERT INTO user(name,description,email) VALUES('"
+					+ name + "', '" + description + "', '" + email + "')";
+
 		try {
 			// insert query
-			String query = "INSERT INTO user(name,description,email) VALUES('"
-					+ name + "', '" + description + "', '" + email + "')";
+			// String query = "INSERT INTO user(name,description,email) VALUES('"
+			// 		+ name + "', '" + description + "', '" + email + "')";
 			System.out.println("Query: " + query);
 			// Database Manager called
 			DBManager db = new DBManager();
@@ -67,7 +70,7 @@ public class FormSave extends HttpServlet {
 			out.print("<h2 align='center'>Error occured. See Logs.</h2><br/><br/>");
 			// Debug
 			out.print("<div>DEBUG:</div><br/>");
-			out.print("<div>"+"Query: " + query+"</div><br/>");
+			out.print("<div>"+"Query: " + query + "</div><br/>");
 			// Debug
 			out.print("<br/><a href='/' style='font-size: 18px;'>Back</a>");
 			out.print("</div></div></div></div></body></html>");
