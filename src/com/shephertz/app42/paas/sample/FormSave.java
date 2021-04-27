@@ -79,7 +79,7 @@ public class FormSave extends HttpServlet {
 			out.print("<div>DBuser: "+Util.getDBUser()+"</div><br/>");
 			out.print("<div>DBpasswd: "+Util.getDBPassword()+"</div><br/>");
 			out.print("<div>DBinstance: "+DBManager.getInstance()+"</div><br/>");
-			out.print("<div>DBinstanceURL: "+DBManager.dburl+"</div><br/>");
+			out.print("<div>DBinstanceURL: "+db.dburl+"</div><br/>");
 			out.print("<div>DBinstanceDataSource: "+DBManager.getInstance().dataSource!=null+"</div><br/>");
 			// debug
 			out.print("<br/><a href='/' style='font-size: 18px;'>Back</a>");

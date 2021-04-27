@@ -16,7 +16,7 @@ import com.shephertz.app42.paas.sample.util.Util;
 
 public class DBManager {
 
-	public static String dburl;
+	public String dburl;
 	private DriverManagerDataSource dataSource = null;
 	private static final DBManager dsManager = new DBManager();
 	static {
