@@ -47,8 +47,7 @@ public class DBManager {
 					+ dbName + "?autoReconnect=true");
 			dataSource.setUsername(username);
 			dataSource.setPassword(password);
-			alert('ok1');
-			console.log('ok2');
+			console.log("ok2");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
