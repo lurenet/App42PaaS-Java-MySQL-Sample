@@ -72,7 +72,7 @@ public class FormSave extends HttpServlet {
 			out.print("<h2 align='center'>3-Error occured. See Logs.</h2><br/><br/>");
 			// debug
 			out.print("<div>Query: "+query+"</div><br/>");
-			out.print("<div>DB: "+db!=NULL+"</div><br/>");
+			out.print("<div>DB: "+db+"</div><br/>");
 			out.print("<div>DBip: "+Util.getDBIp()+"</div><br/>");
 			out.print("<div>DBname: "+Util.getDBName()+"</div><br/>");
 			out.print("<div>DBuser: "+Util.getDBUser()+"</div><br/>");
